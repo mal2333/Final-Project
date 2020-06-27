@@ -1,0 +1,168 @@
+html main {
+  height: 100%;
+  background-color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+
+.whacky-font {
+  font-family: "whacky", sans-serif;
+}
+
+@font-face {
+  font-family: "whacky";
+  src: url("https://www.helloruby.com/assets/hellorubycutout-regular-webfont-b5704b6a74f11da92f3ce4741ad37f41fddcf3fd1b5c819414923c3530670403.woff2") format("woff2");
+}
+
+header {
+  padding: 0.8em 0;
+}
+
+h1 {
+  color: #ff6a13;
+  font-size: 3em;
+  text-align: center;
+}
+
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.padding {
+  padding-top: 2em;
+}
+
+.instructions{
+  margin-top: 8em;
+}
+
+#ruby-doll{
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+#ruby-clothes-top{
+  position: absolute;
+  top: 260px;
+  left: 30px;
+}
+
+#ruby-clothes-bottom{
+  position: relative;
+  top: 370px;
+  left: 50px;
+}
+
+#ruby-clothes-shoes{
+  position: absolute;
+  top: 600px;
+  left: 70px;
+}
+
+#ruby-clothes-accessories{
+  position: absolute;
+  top: 140px;
+  left: 30px;
+}
+
+.btn {
+  color: #fff;
+  background: #71cc98;
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.8em;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.yellow-div {
+  background-color: #ffc72c;
+  padding: 2em;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.grey-div {
+  background: #53565a;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 3em;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0.45em;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.0618s ease-out;
+  transition: all 0.0618s ease-out;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.pink-star {
+  left: 18%;
+}
+
+.blue-blobby{
+  left: 5%;
+}
+
+.lilac-leaner{
+  right: 8%;
+}
+
+.orange-flailer{
+  right: 32%;
+}
+
+.yellow-frowny{
+  right: 20%;
+}
+
+.creature {
+  position: absolute;
+}
+
+.small-print {
+  font-size: 0.75em;
+  line-height: 1.3333333333em;
+}
+
+/*------------------Slider----------------*/
+.slider {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.slick-slide {
+  margin: 0px 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+  max-height: 100px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .1;
+}
+
+.slick-active {
+  opacity: .2;
+}
+
+.slick-current {
+  opacity: 1;
+}
