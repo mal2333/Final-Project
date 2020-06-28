@@ -12,7 +12,7 @@ var arrayTops = [
 ];
 
 var arrayBottoms= [
-    {type: '.bottoms', colors:[], characteristics:[], source:''},
+  {type: '.bottoms', colors:[], characteristics:[], source:''},
   {type: '.bottoms', colors:['pink', 'purple'], characteristics: ['skirt'], source:'<img id="bottom" src="assets/skirt.svg">'},
   {type: '.bottoms', colors:['blue'], characteristics: ['pants'], source:'<img id="bottom" src="assets/pants.svg">'},
   {type: '.bottoms', colors:['black'], characteristics: ['dress','short'], source:'<img id="bottom" src="assets/dress1.svg">'},
@@ -73,10 +73,10 @@ function populate(array, type){
 
 $(document).on('ready', function() {
 
-populate(arrayTops, '.tops');
-populate(arrayBottoms, '.bottoms');
-populate(arrayShoes, '.shoes');
-populate(arrayAccessories, '.accessories');
+  populate(arrayTops, '.tops');
+  populate(arrayBottoms, '.bottoms');
+  populate(arrayShoes, '.shoes');
+  populate(arrayAccessories, '.accessories');
 
   $(".tops").slick({
     dots: true,
@@ -110,36 +110,31 @@ populate(arrayAccessories, '.accessories');
     draggable: true,
     focusOnSelect: true
   });
-
-  $.each(arrayTops[0], function(index, value) {
-    if (`${index}`== 'source'){
-      $('#ruby-clothes-top').append(`${value}`);
-      $('#top').css("width","170px");
-    }
-  });
-
-  $.each(arrayBottoms[0], function(index, value) {
-    if (`${index}`== 'source'){
-      $('#ruby-clothes-bottom').append(`${value}`);
-      $('#bottom').css("width","170px");
-    }
-  });
-
-  $.each(arrayShoes[0], function(index, value) {
-    if (`${index}`== 'source'){
-      $('#ruby-clothes-shoes').append(`${value}`);
-      $('#shoes').css("width","170px");
-    }
-  });
-
-  $.each(arrayAccessories[0], function(index, value) {
-    if (`${index}`== 'source'){
-      $('#ruby-clothes-accessories').append(`${value}`);
-      $('#accessories').css("width","170px");
-    }
-  });
+//  $.each(arrayTops[0], function(index, value) {
+//    if (`${index}`== 'source'){
+//      $('#ruby-clothes-top').append(`${value}`);
+//      $('#top').css("width","170px");
+//    }
+//  });
+//  $.each(arrayBottoms[0], function(index, value) {
+//    if (`${index}`== 'source'){
+//      $('#ruby-clothes-bottom').append(`${value}`);
+//      $('#bottom').css("width","170px");
+//    }
+//  });
+//  $.each(arrayShoes[0], function(index, value) {
+//    if (`${index}`== 'source'){
+//      $('#ruby-clothes-shoes').append(`${value}`);
+//      $('#shoes').css("width","170px");
+//    }
+//  });
+//  $.each(arrayAccessories[0], function(index, value) {
+//    if (`${index}`== 'source'){
+//      $('#ruby-clothes-accessories').append(`${value}`);
+//      $('#accessories').css("width","170px");
+//    }
+//  });
   $('.questions').append(prompts[0].prompt);
-
 });
 
 var currentSlideTops = 0;
@@ -158,7 +153,6 @@ $('.tops').on('beforeChange', function(event, slick, currentSlide, nextSlide){
         $('#top').css("height","170px");
       }
     });
-    //alert(currentSlideTops);
 });
 
 $('.bottoms').on('beforeChange', function(event, slick, currentSlide, nextSlide){
