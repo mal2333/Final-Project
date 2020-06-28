@@ -1,9 +1,9 @@
 # Final Project Brief and Reflections
 
 :::info
-youtube: https://youtu.be/QwYpvL2jK6s
-github:
-github game.html: 
+youtube: https://youtu.be/KPcWguFwvCU
+github: https://github.com/mal2333/Final-Project
+github game.html: https://github.com/mal2333/Final-Project/blob/master/game.html
 **Open the `game.html` page for the game**
 Index is the general page that is outdated. I created it to understand the layout.
 I am sorry, the video is SUPER long!
